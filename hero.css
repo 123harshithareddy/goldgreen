@@ -1,0 +1,56 @@
+/* Hero Section Styles */
+#hero {
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://lakdighanaoil.com/wp-content/uploads/2023/09/glass-jar-with-raw-white-kidney-beans-raw-nest-pasta-gray-table.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-content {
+    color: var(--white);
+    max-width: 800px;
+    padding: var(--spacing-md);
+    animation: fadeIn 1s ease-out;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    margin-bottom: var(--spacing-sm);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: var(--spacing-lg);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content h2:after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+}
+
+.hero-content .btn {
+    font-size: 1.1rem;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: var(--accent);
+    color: var(--text);
+    border: 2px solid var(--accent);
+    font-weight: 500;
+}
+
+.hero-content .btn:hover {
+    background-color: transparent;
+    color: var(--white);
+}
